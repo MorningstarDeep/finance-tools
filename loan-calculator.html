@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Loan Eligibility Calculator India – Check Home Loan Eligibility Free</title>
+  <!-- Favicon setup -->
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+
+  <link rel="icon" type="image/png" sizes="192x192" href="android-chrome-192x192.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="android-chrome-512x512.png">
+  <meta name="description" content="Free loan eligibility calculator India. Check how much home loan, personal loan, or car loan you are eligible for based on your salary and expenses." />
+  <meta name="keywords" content="loan eligibility calculator India, home loan eligibility, how much loan can I get, salary based loan eligibility India free" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="site-logo">Finance Tools India<span class="logo-dot"></span></a>
+      <nav class="site-nav">
+        <a href="emi-calculator.html">EMI</a>
+        <a href="sip-calculator.html">SIP</a>
+        <a href="gst-calculator.html">GST</a>
+        <a href="salary-calculator.html">Salary</a>
+        <a href="loan-calculator.html" class="active">Loan</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="page-hero">
+    <div class="page-hero-inner">
+      <p class="breadcrumb"><a href="index.html">Home</a> / Loan Eligibility Calculator</p>
+      <h1>Loan Eligibility Calculator India</h1>
+      <p>Find out the maximum loan amount you are eligible for based on your monthly salary, existing expenses, and the prevailing interest rate.</p>
+      <p class="trust-line">
+      100% Free • Instant Results • No Signup
+      </p>
+    </div>
+  </section>
+
+  <main class="content-wrap">
+
+    <div class="calc-card">
+      <form id="loan-form" novalidate>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="net-salary">Monthly Net Salary (₹)</label>
+            <input type="number" id="net-salary" placeholder="e.g. 80000" min="5000" required />
+            <p class="form-hint">Your take-home (in-hand) monthly salary.</p>
+          </div>
+
+          <div class="form-group">
+            <label for="monthly-expenses">Monthly Expenses / EMIs (₹)</label>
+            <input type="number" id="monthly-expenses" placeholder="e.g. 20000" min="0" value="0" />
+            <p class="form-hint">Existing loan EMIs + regular monthly obligations.</p>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="loan-interest">Interest Rate (% p.a.)</label>
+            <input type="number" id="loan-interest" placeholder="e.g. 8.5" min="1" step="0.01" required />
+          </div>
+
+          <div class="form-group">
+            <label for="loan-period">Loan Period (Years)</label>
+            <input type="number" id="loan-period" placeholder="e.g. 20" min="1" max="30" required />
+          </div>
+        </div>
+
+        <div class="btn-group">
+          <button type="submit" class="btn btn-primary">Check Eligibility</button>
+          <button type="reset" class="btn btn-reset" id="loan-reset">Reset</button>
+        </div>
+
+      </form>
+    </div>
+
+    <div class="result-box" id="loan-result">
+      <h3>Loan Eligibility Estimate</h3>
+      <div class="result-grid">
+        <div class="result-item">
+          <div class="label">Max Eligible Loan</div>
+          <div class="value accent" id="res-max-loan">—</div>
+        </div>
+        <div class="result-item">
+          <div class="label">Eligible Monthly EMI</div>
+          <div class="value" id="res-emi-cap">—</div>
+        </div>
+        <div class="result-item">
+          <div class="label">Disposable Income</div>
+          <div class="value" id="res-disposable">—</div>
+        </div>
+        <div class="result-item">
+          <div class="label">Total Interest Payable</div>
+          <div class="value" id="res-total-interest">—</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="also-try">
+      <h2>Also Try</h2>
+      <div class="also-try-links">
+        <a href="emi-calculator.html">EMI Calculator</a>
+        <a href="sip-calculator.html">SIP Calculator</a>
+        <a href="salary-calculator.html">Salary Calculator</a>
+        <a href="gst-calculator.html">GST Calculator</a>
+        <a href="index.html">← All Tools</a>
+      </div>
+    </div>
+
+  </main>
+
+  <section class="info-section">
+    <div class="info-section-inner">
+      <h2>How Loan Eligibility is Determined</h2>
+      <p>Banks in India typically allow your total EMI obligations (including the new loan) to be up to 40–50% of your net monthly income (called the Fixed Obligation to Income Ratio or FOIR). We use 50% as the cap. Your disposable income after existing expenses is the basis for how much new EMI you can afford. The eligible loan is then calculated using the standard EMI formula in reverse. Other factors like credit score, employer category, and age also influence final bank approval.</p>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p>Free Finance Tools for India — Accurate, Fast &amp; Free</p>
+      <nav class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="emi-calculator.html">EMI</a>
+        <a href="sip-calculator.html">SIP</a>
+        <a href="gst-calculator.html">GST</a>
+        <a href="salary-calculator.html">Salary</a>
+        <a href="loan-calculator.html">Loan</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="js/loan.js"></script>
+</body>
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EMI Calculator India – Calculate Loan EMI Online Free</title>
+  <meta name="description" content="Use our free EMI calculator India to calculate monthly loan EMI for home loan, car loan, or personal loan. Instant result with amortization breakdown." />
+  <meta name="keywords" content="EMI calculator India, loan EMI calculator, home loan EMI, car loan EMI calculator free tool" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="site-logo">Finance Tools India<span class="logo-dot"></span></a>
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="emi-calculator.html" class="active">EMI</a>
+        <a href="sip-calculator.html">SIP</a>
+        <a href="gst-calculator.html">GST</a>
+        <a href="salary-calculator.html">Salary</a>
+        <a href="loan-calculator.html">Loan</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="page-hero-inner">
+      <p class="breadcrumb"><a href="index.html">Home</a> / EMI Calculator</p>
+      <h1>EMI Calculator India</h1>
+      <p>Calculate your Equated Monthly Instalment (EMI) for any loan — home, car, or personal. Instant results, no sign-up needed.</p>
+      <p class="trust-line">
+      100% Free • Instant Results • No Signup
+      </p>
+    </div>
+  </section>
+
+  <!-- MAIN -->
+  <main class="content-wrap">
+
+    <div class="calc-card">
+      <form id="emi-form" novalidate>
+
+        <div class="form-group">
+          <label for="loan-amount">Loan Amount (₹)</label>
+          <input type="number" id="loan-amount" placeholder="e.g. 5000000" min="1000" required />
+          <p class="form-hint">Enter the total loan amount in rupees.</p>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="interest-rate">Annual Interest Rate (%)</label>
+            <input type="number" id="interest-rate" placeholder="e.g. 8.5" min="0.1" step="0.01" required />
+          </div>
+
+          <div class="form-group">
+            <label for="loan-tenure">Loan Tenure</label>
+            <input type="number" id="loan-tenure" placeholder="e.g. 20" min="1" required />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="tenure-type">Tenure Type</label>
+          <select id="tenure-type">
+            <option value="years">Years</option>
+            <option value="months">Months</option>
+          </select>
+        </div>
+
+        <div class="btn-group">
+          <button type="submit" class="btn btn-primary">Calculate EMI</button>
+          <button type="reset" class="btn btn-reset" id="emi-reset">Reset</button>
+        </div>
+
+      </form>
+    </div>
+
+    <!-- RESULTS -->
+    <div class="result-box" id="emi-result">
+      <h3>Your EMI Breakdown</h3>
+      <div class="result-grid">
+        <div class="result-item">
+          <div class="label">Monthly EMI</div>
+          <div class="value accent" id="res-emi">—</div>
+        </div>
+        <div class="result-item">
+          <div class="label">Total Interest</div>
+          <div class="value" id="res-interest">—</div>
+        </div>
+        <div class="result-item">
+          <div class="label">Total Payment</div>
+          <div class="value" id="res-total">—</div>
+        </div>
+        <div class="result-item">
+          <div class="label">Principal Amount</div>
+          <div class="value" id="res-principal">—</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ALSO TRY -->
+    <div class="also-try">
+      <h2>Also Try</h2>
+      <div class="also-try-links">
+        <a href="sip-calculator.html">SIP Calculator</a>
+        <a href="loan-calculator.html">Loan Eligibility Calculator</a>
+        <a href="salary-calculator.html">Salary Calculator</a>
+        <a href="gst-calculator.html">GST Calculator</a>
+        <a href="index.html">← All Tools</a>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- INFO -->
+  <section class="info-section">
+    <div class="info-section-inner">
+      <h2>How is EMI Calculated?</h2>
+      <p>EMI = [P × R × (1+R)^N] / [(1+R)^N – 1], where P is the principal loan amount, R is the monthly interest rate (annual rate ÷ 12 ÷ 100), and N is the number of monthly instalments. This formula is the standard method used by all banks and NBFCs in India.</p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p>Free Finance Tools for India — Accurate, Fast &amp; Free</p>
+      <nav class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="emi-calculator.html">EMI</a>
+        <a href="sip-calculator.html">SIP</a>
+        <a href="gst-calculator.html">GST</a>
+        <a href="salary-calculator.html">Salary</a>
+        <a href="loan-calculator.html">Loan</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="js/emi.js"></script>
+</body>
+</html>

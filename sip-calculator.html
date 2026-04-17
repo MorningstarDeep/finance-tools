@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SIP Calculator India – Calculate Mutual Fund SIP Returns Free</title>
+  <!-- Favicon setup -->
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+
+  <link rel="icon" type="image/png" sizes="192x192" href="android-chrome-192x192.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="android-chrome-512x512.png">
+  <meta name="description" content="Free SIP calculator India. Calculate your monthly SIP returns and find out how much your mutual fund investment will grow. Easy and accurate." />
+  <meta name="keywords" content="SIP calculator India, mutual fund SIP calculator, SIP return calculator free, monthly SIP investment calculator" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="site-logo">Finance Tools India<span class="logo-dot"></span></a>
+      <nav class="site-nav">
+        <a href="emi-calculator.html">EMI</a>
+        <a href="sip-calculator.html" class="active">SIP</a>
+        <a href="gst-calculator.html">GST</a>
+        <a href="salary-calculator.html">Salary</a>
+        <a href="loan-calculator.html">Loan</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="page-hero">
+    <div class="page-hero-inner">
+      <p class="breadcrumb"><a href="index.html">Home</a> / SIP Calculator</p>
+      <h1>SIP Calculator India</h1>
+      <p>Calculate how much wealth your monthly SIP investments in mutual funds will create over time. Free, fast, and accurate.</p>
+      <p class="trust-line">
+      100% Free • Instant Results • No Signup
+      </p>
+    </div>
+  </section>
+
+  <main class="content-wrap">
+
+    <div class="calc-card">
+      <form id="sip-form" novalidate>
+
+        <div class="form-group">
+          <label for="monthly-investment">Monthly Investment Amount (₹)</label>
+          <input type="number" id="monthly-investment" placeholder="e.g. 5000" min="100" required />
+          <p class="form-hint">The amount you plan to invest every month.</p>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="sip-rate">Expected Annual Return (%)</label>
+            <input type="number" id="sip-rate" placeholder="e.g. 12" min="1" step="0.01" required />
+            <p class="form-hint">Historical average: 10–14% for equity funds.</p>
+          </div>
+
+          <div class="form-group">
+            <label for="sip-duration">Investment Duration (Years)</label>
+            <input type="number" id="sip-duration" placeholder="e.g. 10" min="1" max="50" required />
+          </div>
+        </div>
+
+        <div class="btn-group">
+          <button type="submit" class="btn btn-primary">Calculate Returns</button>
+          <button type="reset" class="btn btn-reset" id="sip-reset">Reset</button>
+        </div>
+
+      </form>
+    </div>
+
+    <div class="result-box" id="sip-result">
+      <h3>SIP Growth Summary</h3>
+      <div class="result-grid">
+        <div class="result-item">
+          <div class="label">Future Value</div>
+          <div class="value accent" id="res-future">—</div>
+        </div>
+        <div class="result-item">
+          <div class="label">Total Invested</div>
+          <div class="value" id="res-invested">—</div>
+        </div>
+        <div class="result-item">
+          <div class="label">Wealth Gained</div>
+          <div class="value" id="res-gain">—</div>
+        </div>
+        <div class="result-item">
+          <div class="label">Return on Investment</div>
+          <div class="value" id="res-roi">—</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="also-try">
+      <h2>Also Try</h2>
+      <div class="also-try-links">
+        <a href="emi-calculator.html">EMI Calculator</a>
+        <a href="loan-calculator.html">Loan Eligibility Calculator</a>
+        <a href="salary-calculator.html">Salary Calculator</a>
+        <a href="gst-calculator.html">GST Calculator</a>
+        <a href="index.html">← All Tools</a>
+      </div>
+    </div>
+
+  </main>
+
+  <section class="info-section">
+    <div class="info-section-inner">
+      <h2>How is SIP Return Calculated?</h2>
+      <p>SIP returns are calculated using the compound interest formula applied to each monthly instalment. Future Value = P × [(1 + r)^n – 1] / r × (1 + r), where P is the monthly investment, r is the monthly rate of return (annual rate ÷ 12 ÷ 100), and n is the total number of months. The longer you stay invested, the more powerful compounding becomes — this is the magic of SIP investing in India.</p>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p>Free Finance Tools for India — Accurate, Fast &amp; Free</p>
+      <nav class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="emi-calculator.html">EMI</a>
+        <a href="sip-calculator.html">SIP</a>
+        <a href="gst-calculator.html">GST</a>
+        <a href="salary-calculator.html">Salary</a>
+        <a href="loan-calculator.html">Loan</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="js/sip.js"></script>
+</body>
+</html>

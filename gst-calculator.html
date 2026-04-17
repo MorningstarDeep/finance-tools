@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GST Calculator India – Calculate GST Amount Online Free</title>
+  <!-- Favicon setup -->
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+
+  <link rel="icon" type="image/png" sizes="192x192" href="android-chrome-192x192.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="android-chrome-512x512.png">
+  <meta name="description" content="Free GST calculator India. Calculate GST amount, CGST, SGST, IGST and total invoice value for any product or service instantly." />
+  <meta name="keywords" content="GST calculator India, GST amount calculator free, CGST SGST calculator, goods services tax calculator India" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="site-logo">Finance Tools India<span class="logo-dot"></span></a>
+      <nav class="site-nav">
+        <a href="emi-calculator.html">EMI</a>
+        <a href="sip-calculator.html">SIP</a>
+        <a href="gst-calculator.html" class="active">GST</a>
+        <a href="salary-calculator.html">Salary</a>
+        <a href="loan-calculator.html">Loan</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="page-hero">
+    <div class="page-hero-inner">
+      <p class="breadcrumb"><a href="index.html">Home</a> / GST Calculator</p>
+      <h1>GST Calculator India</h1>
+      <p>Calculate GST amount, CGST, SGST, and total payable amount for any product or service. Supports all GST slabs used in India.</p>
+      <p class="trust-line">
+      100% Free • Instant Results • No Signup
+      </p>
+    </div>
+  </section>
+
+  <main class="content-wrap">
+
+    <div class="calc-card">
+      <form id="gst-form" novalidate>
+
+        <div class="form-group">
+          <label for="base-amount">Amount (₹)</label>
+          <input type="number" id="base-amount" placeholder="e.g. 10000" min="1" required />
+          <p class="form-hint">Enter the base price (excluding GST) or inclusive price.</p>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="gst-rate">GST Rate (%)</label>
+            <select id="gst-rate">
+              <option value="5">5% — Essential goods</option>
+              <option value="12">12% — Standard goods</option>
+              <option value="18" selected>18% — Services / goods</option>
+              <option value="28">28% — Luxury goods</option>
+              <option value="custom">Custom rate</option>
+            </select>
+          </div>
+
+          <div class="form-group" id="custom-rate-group" style="display:none">
+            <label for="custom-rate">Custom GST Rate (%)</label>
+            <input type="number" id="custom-rate" placeholder="e.g. 3" min="0.01" step="0.01" />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="gst-type">Calculation Type</label>
+          <select id="gst-type">
+            <option value="exclusive">Add GST to amount (exclusive)</option>
+            <option value="inclusive">Extract GST from amount (inclusive)</option>
+          </select>
+        </div>
+
+        <div class="btn-group">
+          <button type="submit" class="btn btn-primary">Calculate GST</button>
+          <button type="reset" class="btn btn-reset" id="gst-reset">Reset</button>
+        </div>
+
+      </form>
+    </div>
+
+    <div class="result-box" id="gst-result">
+      <h3>GST Breakdown</h3>
+      <div class="result-grid">
+        <div class="result-item">
+          <div class="label">Total GST Amount</div>
+          <div class="value accent" id="res-gst-total">—</div>
+        </div>
+        <div class="result-item">
+          <div class="label">CGST (50%)</div>
+          <div class="value" id="res-cgst">—</div>
+        </div>
+        <div class="result-item">
+          <div class="label">SGST (50%)</div>
+          <div class="value" id="res-sgst">—</div>
+        </div>
+        <div class="result-item">
+          <div class="label">Pre-GST Amount</div>
+          <div class="value" id="res-pre-gst">—</div>
+        </div>
+        <div class="result-item">
+          <div class="label">Total Invoice Value</div>
+          <div class="value" id="res-invoice">—</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="also-try">
+      <h2>Also Try</h2>
+      <div class="also-try-links">
+        <a href="emi-calculator.html">EMI Calculator</a>
+        <a href="sip-calculator.html">SIP Calculator</a>
+        <a href="salary-calculator.html">Salary Calculator</a>
+        <a href="loan-calculator.html">Loan Eligibility</a>
+        <a href="index.html">← All Tools</a>
+      </div>
+    </div>
+
+  </main>
+
+  <section class="info-section">
+    <div class="info-section-inner">
+      <h2>GST Slabs in India</h2>
+      <p>India follows a four-tier GST structure: 5% on essential goods and some services, 12% on standard goods, 18% on most services and goods (the most common slab), and 28% on luxury and sin goods. IGST applies for inter-state transactions while CGST + SGST applies for intra-state transactions — each at half the total GST rate.</p>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p>Free Finance Tools for India — Accurate, Fast &amp; Free</p>
+      <nav class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="emi-calculator.html">EMI</a>
+        <a href="sip-calculator.html">SIP</a>
+        <a href="gst-calculator.html">GST</a>
+        <a href="salary-calculator.html">Salary</a>
+        <a href="loan-calculator.html">Loan</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="js/gst.js"></script>
+</body>
+</html>

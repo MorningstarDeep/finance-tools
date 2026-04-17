@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Salary Calculator India – CTC to In-Hand Salary Calculator Free</title>
+  <!-- Favicon setup -->
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+
+  <link rel="icon" type="image/png" sizes="192x192" href="android-chrome-192x192.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="android-chrome-512x512.png">
+  <meta name="description" content="Free salary calculator India. Convert your CTC to monthly in-hand salary after PF, professional tax, income tax (TDS), and other deductions." />
+  <meta name="keywords" content="salary calculator India, CTC to in-hand calculator, take home salary calculator India free, monthly salary calculator" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="site-logo">Finance Tools India<span class="logo-dot"></span></a>
+      <nav class="site-nav">
+        <a href="emi-calculator.html">EMI</a>
+        <a href="sip-calculator.html">SIP</a>
+        <a href="gst-calculator.html">GST</a>
+        <a href="salary-calculator.html" class="active">Salary</a>
+        <a href="loan-calculator.html">Loan</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="page-hero">
+    <div class="page-hero-inner">
+      <p class="breadcrumb"><a href="index.html">Home</a> / Salary Calculator</p>
+      <h1>Salary Calculator India – CTC to In-Hand</h1>
+      <p>Estimate your monthly take-home salary after all deductions including PF, professional tax, and income tax (TDS).</p>
+      <p class="trust-line">
+      100% Free • Instant Results • No Signup
+      </p>
+    </div>
+  </section>
+
+  <main class="content-wrap">
+
+    <div class="calc-card">
+      <form id="salary-form" novalidate>
+
+        <div class="form-group">
+          <label for="annual-ctc">Annual CTC (₹)</label>
+          <input type="number" id="annual-ctc" placeholder="e.g. 1200000" min="100000" required />
+          <p class="form-hint">Enter your total Cost to Company (CTC) per year.</p>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="tax-regime">Income Tax Regime</label>
+            <select id="tax-regime">
+              <option value="new">New Tax Regime (2024–25)</option>
+              <option value="old">Old Tax Regime</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="pf-option">PF Contribution</label>
+            <select id="pf-option">
+              <option value="yes">Yes (12% of Basic)</option>
+              <option value="no">No (Not applicable)</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="bonus">Annual Bonus / Variable Pay (₹)</label>
+          <input type="number" id="bonus" placeholder="e.g. 50000 (leave 0 if none)" min="0" value="0" />
+        </div>
+
+        <div class="btn-group">
+          <button type="submit" class="btn btn-primary">Calculate In-Hand Salary</button>
+          <button type="reset" class="btn btn-reset" id="salary-reset">Reset</button>
+        </div>
+
+      </form>
+    </div>
+
+    <div class="result-box" id="salary-result">
+      <h3>Salary Breakdown</h3>
+      <div class="result-grid">
+        <div class="result-item">
+          <div class="label">Monthly In-Hand</div>
+          <div class="value accent" id="res-inhand">—</div>
+        </div>
+        <div class="result-item">
+          <div class="label">Annual In-Hand</div>
+          <div class="value" id="res-annual-net">—</div>
+        </div>
+        <div class="result-item">
+          <div class="label">Monthly Gross</div>
+          <div class="value" id="res-gross">—</div>
+        </div>
+        <div class="result-item">
+          <div class="label">PF Deduction (monthly)</div>
+          <div class="value" id="res-pf">—</div>
+        </div>
+        <div class="result-item">
+          <div class="label">Income Tax / TDS (annual)</div>
+          <div class="value" id="res-tax">—</div>
+        </div>
+        <div class="result-item">
+          <div class="label">Professional Tax (annual)</div>
+          <div class="value" id="res-pt">—</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="also-try">
+      <h2>Also Try</h2>
+      <div class="also-try-links">
+        <a href="emi-calculator.html">EMI Calculator</a>
+        <a href="sip-calculator.html">SIP Calculator</a>
+        <a href="loan-calculator.html">Loan Eligibility</a>
+        <a href="gst-calculator.html">GST Calculator</a>
+        <a href="index.html">← All Tools</a>
+      </div>
+    </div>
+
+  </main>
+
+  <section class="info-section">
+    <div class="info-section-inner">
+      <h2>How In-Hand Salary is Calculated</h2>
+      <p>Your in-hand salary = Gross Salary − Employee PF (12% of Basic) − Income Tax (TDS) − Professional Tax. Basic Salary is typically 40–50% of CTC. HRA, special allowances, and other components make up the rest. Our calculator uses standard Indian salary structure assumptions. The actual amount may vary slightly based on your employer's specific salary structure and state-level professional tax.</p>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p>Free Finance Tools for India — Accurate, Fast &amp; Free</p>
+      <nav class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="emi-calculator.html">EMI</a>
+        <a href="sip-calculator.html">SIP</a>
+        <a href="gst-calculator.html">GST</a>
+        <a href="salary-calculator.html">Salary</a>
+        <a href="loan-calculator.html">Loan</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="js/salary.js"></script>
+</body>
+</html>
