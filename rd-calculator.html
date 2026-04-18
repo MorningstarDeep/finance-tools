@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RD Calculator India – Calculate Recurring Deposit Maturity Amount Free</title>
+  <meta name="description" content="Free RD calculator India. Calculate maturity amount and total interest on your Recurring Deposit. Supports all tenures and bank RD rates instantly." />
+  <meta name="keywords" content="RD calculator India, recurring deposit calculator, RD maturity calculator free, post office RD calculator India" />
+  <link rel="canonical" href="https://financetoolsindia.pages.dev/rd-calculator.html" />
+  <link rel="icon" type="image/x-icon" href="favicon.ico" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "RD Calculator India",
+    "description": "Free recurring deposit calculator for India. Calculate RD maturity amount and interest.",
+    "url": "https://financetoolsindia.pages.dev/rd-calculator.html",
+    "isPartOf": { "@type": "WebSite", "name": "Finance Tools India", "url": "https://financetoolsindia.pages.dev/" }
+  }
+  </script>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="site-logo">Finance Tools India<span class="logo-dot"></span></a>
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="emi-calculator.html">EMI</a>
+        <a href="sip-calculator.html">SIP</a>
+        <a href="gst-calculator.html">GST</a>
+        <a href="salary-calculator.html">Salary</a>
+        <a href="loan-calculator.html">Loan</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="page-hero">
+    <div class="page-hero-inner">
+      <p class="breadcrumb"><a href="index.html">Home</a> / RD Calculator</p>
+      <h1>RD Calculator India – Recurring Deposit Returns</h1>
+      <p>Calculate the maturity value and total interest on your Recurring Deposit (RD). Enter your monthly deposit, rate, and tenure to get instant results.</p>
+    </div>
+  </section>
+
+  <main class="content-wrap">
+
+    <div class="calc-card">
+      <form id="rd-form" novalidate>
+
+        <div class="form-group">
+          <label for="rd-monthly">Monthly Deposit Amount (₹)</label>
+          <input type="number" id="rd-monthly" placeholder="e.g. 5000" min="100" required />
+          <p class="form-hint">The fixed amount you will deposit every month.</p>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="rd-rate">Annual Interest Rate (%)</label>
+            <input type="number" id="rd-rate" placeholder="e.g. 6.8" min="0.1" step="0.01" required />
+            <p class="form-hint">Check your bank's current RD rate.</p>
+          </div>
+
+          <div class="form-group">
+            <label for="rd-tenure">Tenure (Months)</label>
+            <input type="number" id="rd-tenure" placeholder="e.g. 24" min="6" max="120" required />
+            <p class="form-hint">Minimum 6 months, maximum 10 years (120 months).</p>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="rd-senior">
+            <input type="checkbox" id="rd-senior" style="width:auto;margin-right:.4rem;" />
+            Senior Citizen (additional 0.50% p.a.)
+          </label>
+        </div>
+
+        <div class="btn-group">
+          <button type="submit" class="btn btn-primary">Calculate RD Maturity</button>
+          <button type="reset" class="btn btn-reset" id="rd-reset">Reset</button>
+        </div>
+
+      </form>
+    </div>
+
+    <div class="result-box" id="rd-result">
+      <h3>Recurring Deposit Maturity Summary</h3>
+      <div class="result-grid">
+        <div class="result-item">
+          <div class="label">Maturity Amount</div>
+          <div class="value accent" id="res-rd-maturity">—</div>
+        </div>
+        <div class="result-item">
+          <div class="label">Interest Earned</div>
+          <div class="value" id="res-rd-interest">—</div>
+        </div>
+        <div class="result-item">
+          <div class="label">Total Deposited</div>
+          <div class="value" id="res-rd-invested">—</div>
+        </div>
+        <div class="result-item">
+          <div class="label">Effective Rate Applied</div>
+          <div class="value" id="res-rd-rate">—</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SEO CONTENT -->
+    <section class="seo-content">
+      <h2>What is a Recurring Deposit (RD)?</h2>
+      <p>A Recurring Deposit (RD) is a savings product offered by banks and post offices in India where you deposit a fixed amount every month for a predetermined tenure. At the end of the tenure, you receive the total principal plus accumulated interest. RDs are ideal for people who want to save regularly from their monthly income.</p>
+
+      <h2>RD Interest Calculation Method</h2>
+      <p>Indian banks calculate RD interest using quarterly compounding on each monthly instalment. The formula is: <strong>M = R × [(1+i)^n − 1] / (1 − (1+i)^(-1/3))</strong>, where M is the maturity value, R is the monthly deposit, i is the quarterly interest rate (annual rate ÷ 4 ÷ 100), and n is the number of quarters. This is the standard formula used by SBI, Post Office, HDFC, and all major Indian banks.</p>
+
+      <h2>RD vs SIP — Which is Better?</h2>
+      <p>Both RD and SIP involve monthly investments. RDs offer guaranteed, fixed returns (currently 6%–7.5% p.a.) making them suitable for risk-averse investors and short-term goals. SIPs in mutual funds offer potentially higher returns (10%–15% historically) but with market-linked risk. RDs are ideal for goals within 1–5 years; SIPs are better for long-term wealth creation over 5+ years.</p>
+
+      <h2>Post Office RD</h2>
+      <p>The Post Office Recurring Deposit (PO RD) offers a government-backed interest rate, currently 6.7% p.a. compounded quarterly. It has a fixed tenure of 5 years and a minimum monthly deposit of ₹100. It is one of the safest RD options in India with sovereign backing, making it popular in rural and semi-urban India.</p>
+    </section>
+
+    <div class="also-try">
+      <h2>Also Try</h2>
+      <div class="also-try-links">
+        <a href="fd-calculator.html">FD Calculator</a>
+        <a href="sip-calculator.html">SIP Calculator</a>
+        <a href="compound-interest-calculator.html">Compound Interest Calculator</a>
+        <a href="emi-calculator.html">EMI Calculator</a>
+        <a href="interest-calculator.html">Simple Interest Calculator</a>
+        <a href="index.html">← All Tools</a>
+      </div>
+    </div>
+
+  </main>
+
+  <section class="info-section">
+    <div class="info-section-inner">
+      <h2>How to Use This RD Calculator</h2>
+      <p>Enter your monthly deposit amount, the annual interest rate quoted by your bank or post office, and the tenure in months. Tick the senior citizen box if applicable. Click "Calculate RD Maturity" to see your total maturity amount, interest earned, and the total deposits made. This calculator uses the standard quarterly compounding method used by all major Indian banks and the Post Office.</p>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p>Free Finance Tools for India — Accurate, Fast &amp; Free</p>
+      <nav class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="emi-calculator.html">EMI</a>
+        <a href="sip-calculator.html">SIP</a>
+        <a href="fd-calculator.html">FD</a>
+        <a href="compound-interest-calculator.html">Compound Interest</a>
+        <a href="interest-calculator.html">Simple Interest</a>
+        <a href="percentage-calculator.html">Percentage</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="js/rd.js"></script>
+</body>
+</html>

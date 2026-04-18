@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Percentage Calculator India – Calculate % of Number, % Change Free</title>
+  <meta name="description" content="Free percentage calculator India. Calculate percentage of a number, percentage change, percentage difference, and reverse percentage. Multiple modes in one tool." />
+  <meta name="keywords" content="percentage calculator India, calculate percentage free, percent of number calculator, percentage change calculator India" />
+  <link rel="canonical" href="https://financetoolsindia.pages.dev/percentage-calculator.html" />
+  <link rel="icon" type="image/x-icon" href="favicon.ico" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Percentage Calculator India",
+    "description": "Free multi-mode percentage calculator for India.",
+    "url": "https://financetoolsindia.pages.dev/percentage-calculator.html",
+    "isPartOf": { "@type": "WebSite", "name": "Finance Tools India", "url": "https://financetoolsindia.pages.dev/" }
+  }
+  </script>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="site-logo">Finance Tools India<span class="logo-dot"></span></a>
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="emi-calculator.html">EMI</a>
+        <a href="sip-calculator.html">SIP</a>
+        <a href="gst-calculator.html">GST</a>
+        <a href="salary-calculator.html">Salary</a>
+        <a href="loan-calculator.html">Loan</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="page-hero">
+    <div class="page-hero-inner">
+      <p class="breadcrumb"><a href="index.html">Home</a> / Percentage Calculator</p>
+      <h1>Percentage Calculator India</h1>
+      <p>A versatile free percentage calculator with four modes: find percentage of a number, calculate percentage change, find what percentage one number is of another, and reverse percentage.</p>
+    </div>
+  </section>
+
+  <main class="content-wrap">
+
+    <!-- MODE TABS -->
+    <div class="calc-tabs" id="calc-tabs">
+      <button class="calc-tab active" data-mode="of">% of Number</button>
+      <button class="calc-tab" data-mode="change">% Change</button>
+      <button class="calc-tab" data-mode="what">What % is X of Y</button>
+      <button class="calc-tab" data-mode="reverse">Reverse %</button>
+    </div>
+
+    <!-- MODE: Percentage OF a number -->
+    <div class="calc-card tab-panel active" id="panel-of">
+      <form id="form-of" novalidate>
+        <p class="mode-desc">Find: <strong>X% of Y = ?</strong></p>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="of-percent">Percentage (%)</label>
+            <input type="number" id="of-percent" placeholder="e.g. 18" required />
+          </div>
+          <div class="form-group">
+            <label for="of-number">Of Number</label>
+            <input type="number" id="of-number" placeholder="e.g. 50000" required />
+          </div>
+        </div>
+        <div class="btn-group">
+          <button type="submit" class="btn btn-primary">Calculate</button>
+          <button type="reset" class="btn btn-reset">Reset</button>
+        </div>
+      </form>
+      <div class="result-box" id="result-of">
+        <h3>Result</h3>
+        <div class="result-grid">
+          <div class="result-item">
+            <div class="label">Result</div>
+            <div class="value accent" id="res-of-result">—</div>
+          </div>
+          <div class="result-item">
+            <div class="label">Remaining (100% − X%)</div>
+            <div class="value" id="res-of-remaining">—</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- MODE: Percentage Change -->
+    <div class="calc-card tab-panel" id="panel-change" style="display:none">
+      <form id="form-change" novalidate>
+        <p class="mode-desc">Find: <strong>% change from old value to new value</strong></p>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="change-old">Old Value</label>
+            <input type="number" id="change-old" placeholder="e.g. 80000" required />
+          </div>
+          <div class="form-group">
+            <label for="change-new">New Value</label>
+            <input type="number" id="change-new" placeholder="e.g. 95000" required />
+          </div>
+        </div>
+        <div class="btn-group">
+          <button type="submit" class="btn btn-primary">Calculate Change</button>
+          <button type="reset" class="btn btn-reset">Reset</button>
+        </div>
+      </form>
+      <div class="result-box" id="result-change">
+        <h3>Result</h3>
+        <div class="result-grid">
+          <div class="result-item">
+            <div class="label">Percentage Change</div>
+            <div class="value accent" id="res-change-pct">—</div>
+          </div>
+          <div class="result-item">
+            <div class="label">Absolute Change</div>
+            <div class="value" id="res-change-abs">—</div>
+          </div>
+          <div class="result-item">
+            <div class="label">Direction</div>
+            <div class="value" id="res-change-dir">—</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- MODE: What % is X of Y -->
+    <div class="calc-card tab-panel" id="panel-what" style="display:none">
+      <form id="form-what" novalidate>
+        <p class="mode-desc">Find: <strong>X is what % of Y?</strong></p>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="what-x">Value (X)</label>
+            <input type="number" id="what-x" placeholder="e.g. 15000" required />
+          </div>
+          <div class="form-group">
+            <label for="what-y">Total (Y)</label>
+            <input type="number" id="what-y" placeholder="e.g. 80000" required />
+          </div>
+        </div>
+        <div class="btn-group">
+          <button type="submit" class="btn btn-primary">Calculate %</button>
+          <button type="reset" class="btn btn-reset">Reset</button>
+        </div>
+      </form>
+      <div class="result-box" id="result-what">
+        <h3>Result</h3>
+        <div class="result-grid">
+          <div class="result-item">
+            <div class="label">Percentage</div>
+            <div class="value accent" id="res-what-pct">—</div>
+          </div>
+          <div class="result-item">
+            <div class="label">Remaining %</div>
+            <div class="value" id="res-what-rem">—</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- MODE: Reverse Percentage -->
+    <div class="calc-card tab-panel" id="panel-reverse" style="display:none">
+      <form id="form-reverse" novalidate>
+        <p class="mode-desc">Find: <strong>If X is P% of what number?</strong> (e.g. "90 is 45% of what?")</p>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="rev-value">Value (X)</label>
+            <input type="number" id="rev-value" placeholder="e.g. 90" required />
+          </div>
+          <div class="form-group">
+            <label for="rev-percent">Is P% of</label>
+            <input type="number" id="rev-percent" placeholder="e.g. 45" required />
+          </div>
+        </div>
+        <div class="btn-group">
+          <button type="submit" class="btn btn-primary">Find Original</button>
+          <button type="reset" class="btn btn-reset">Reset</button>
+        </div>
+      </form>
+      <div class="result-box" id="result-reverse">
+        <h3>Result</h3>
+        <div class="result-grid">
+          <div class="result-item">
+            <div class="label">Original Number</div>
+            <div class="value accent" id="res-rev-original">—</div>
+          </div>
+          <div class="result-item">
+            <div class="label">Verification</div>
+            <div class="value" id="res-rev-verify">—</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SEO CONTENT -->
+    <section class="seo-content">
+      <h2>How to Calculate Percentage</h2>
+      <p>There are four common percentage calculations used in finance and everyday life. (1) Percentage of a number: multiply the percentage by the number and divide by 100. (2) Percentage change: subtract old from new, divide by old, multiply by 100. (3) What percentage is X of Y: divide X by Y and multiply by 100. (4) Reverse percentage: divide the given value by the percentage and multiply by 100.</p>
+
+      <h2>Percentage in Finance – Common Uses</h2>
+      <p>Percentages are fundamental to personal finance in India. Interest rates on loans and deposits are expressed as percentages per annum. GST is charged as a percentage of the base price. Tax slabs are defined in percentage brackets. Investment returns, inflation, and salary hikes are all measured as percentages. Understanding percentages is the foundation of financial literacy.</p>
+
+      <h2>Percentage Change Examples</h2>
+      <p>If your salary increased from ₹50,000 to ₹60,000, the percentage increase is (60,000 − 50,000) ÷ 50,000 × 100 = 20%. If a stock fell from ₹1,200 to ₹900, the percentage decrease is (900 − 1,200) ÷ 1,200 × 100 = −25%. Tracking these changes helps in evaluating investment performance and negotiating increments.</p>
+    </section>
+
+    <div class="also-try">
+      <h2>Also Try</h2>
+      <div class="also-try-links">
+        <a href="gst-calculator.html">GST Calculator</a>
+        <a href="emi-calculator.html">EMI Calculator</a>
+        <a href="sip-calculator.html">SIP Calculator</a>
+        <a href="interest-calculator.html">Simple Interest Calculator</a>
+        <a href="salary-calculator.html">Salary Calculator</a>
+        <a href="index.html">← All Tools</a>
+      </div>
+    </div>
+
+  </main>
+
+  <section class="info-section">
+    <div class="info-section-inner">
+      <h2>Why Use a Percentage Calculator?</h2>
+      <p>Percentage calculations appear daily in finance — from calculating GST on a purchase to figuring out your salary hike percentage or the return on an FD. Our multi-mode percentage calculator covers all common use cases in one free tool. No app download needed, no login required — just instant, accurate results in your browser.</p>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p>Free Finance Tools for India — Accurate, Fast &amp; Free</p>
+      <nav class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="emi-calculator.html">EMI</a>
+        <a href="sip-calculator.html">SIP</a>
+        <a href="gst-calculator.html">GST</a>
+        <a href="fd-calculator.html">FD</a>
+        <a href="rd-calculator.html">RD</a>
+        <a href="interest-calculator.html">Simple Interest</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="js/percentage.js"></script>
+</body>
+</html>

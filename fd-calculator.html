@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FD Calculator India – Calculate Fixed Deposit Returns Online Free</title>
+  <meta name="description" content="Free FD calculator India. Calculate maturity amount and interest earned on your fixed deposit. Supports quarterly compounding used by all major Indian banks." />
+  <meta name="keywords" content="FD calculator India, fixed deposit calculator, FD maturity calculator, fixed deposit interest calculator India free" />
+  <link rel="canonical" href="https://financetoolsindia.pages.dev/fd-calculator.html" />
+  <link rel="icon" type="image/x-icon" href="favicon.ico" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "FD Calculator India",
+    "description": "Free fixed deposit calculator for India. Calculate FD maturity amount and interest.",
+    "url": "https://financetoolsindia.pages.dev/fd-calculator.html",
+    "isPartOf": { "@type": "WebSite", "name": "Finance Tools India", "url": "https://financetoolsindia.pages.dev/" }
+  }
+  </script>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="site-logo">Finance Tools India<span class="logo-dot"></span></a>
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="emi-calculator.html">EMI</a>
+        <a href="sip-calculator.html">SIP</a>
+        <a href="gst-calculator.html">GST</a>
+        <a href="salary-calculator.html">Salary</a>
+        <a href="loan-calculator.html">Loan</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="page-hero">
+    <div class="page-hero-inner">
+      <p class="breadcrumb"><a href="index.html">Home</a> / FD Calculator</p>
+      <h1>FD Calculator India – Fixed Deposit Returns</h1>
+      <p>Calculate the maturity value and total interest earned on your fixed deposit. Supports all tenures, interest payout options, and senior citizen rates.</p>
+    </div>
+  </section>
+
+  <main class="content-wrap">
+
+    <div class="calc-card">
+      <form id="fd-form" novalidate>
+
+        <div class="form-group">
+          <label for="fd-amount">Deposit Amount (₹)</label>
+          <input type="number" id="fd-amount" placeholder="e.g. 500000" min="1000" required />
+          <p class="form-hint">The lump-sum amount you want to deposit.</p>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="fd-rate">Annual Interest Rate (%)</label>
+            <input type="number" id="fd-rate" placeholder="e.g. 7.1" min="0.1" step="0.01" required />
+            <p class="form-hint">Check your bank's current FD rate.</p>
+          </div>
+
+          <div class="form-group">
+            <label for="fd-tenure">Tenure</label>
+            <input type="number" id="fd-tenure" placeholder="e.g. 2" min="0.25" step="0.25" required />
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="fd-tenure-unit">Tenure Unit</label>
+            <select id="fd-tenure-unit">
+              <option value="years">Years</option>
+              <option value="months">Months</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="fd-payout">Interest Payout</label>
+            <select id="fd-payout">
+              <option value="cumulative">Cumulative (at maturity)</option>
+              <option value="quarterly">Quarterly payout</option>
+              <option value="monthly">Monthly payout</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="fd-senior">
+            <input type="checkbox" id="fd-senior" style="width:auto;margin-right:.4rem;" />
+            Senior Citizen (additional 0.50% p.a.)
+          </label>
+        </div>
+
+        <div class="btn-group">
+          <button type="submit" class="btn btn-primary">Calculate FD Returns</button>
+          <button type="reset" class="btn btn-reset" id="fd-reset">Reset</button>
+        </div>
+
+      </form>
+    </div>
+
+    <div class="result-box" id="fd-result">
+      <h3>Fixed Deposit Maturity Summary</h3>
+      <div class="result-grid">
+        <div class="result-item">
+          <div class="label">Maturity Amount</div>
+          <div class="value accent" id="res-fd-maturity">—</div>
+        </div>
+        <div class="result-item">
+          <div class="label">Interest Earned</div>
+          <div class="value" id="res-fd-interest">—</div>
+        </div>
+        <div class="result-item">
+          <div class="label">Invested Amount</div>
+          <div class="value" id="res-fd-invested">—</div>
+        </div>
+        <div class="result-item">
+          <div class="label">Effective Rate Applied</div>
+          <div class="value" id="res-fd-rate">—</div>
+        </div>
+        <div class="result-item">
+          <div class="label">Periodic Payout</div>
+          <div class="value" id="res-fd-payout">—</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SEO CONTENT -->
+    <section class="seo-content">
+      <h2>What is a Fixed Deposit (FD)?</h2>
+      <p>A Fixed Deposit (FD) is one of the safest investment instruments in India. You deposit a lump sum with a bank or NBFC for a fixed tenure at a pre-agreed interest rate. The rate does not change during the tenure, making it a risk-free, predictable investment. FDs are insured up to ₹5 lakh per depositor per bank by the DICGC (Deposit Insurance and Credit Guarantee Corporation).</p>
+
+      <h2>FD Interest Calculation Method</h2>
+      <p>For cumulative FDs (interest paid at maturity), banks in India compound interest quarterly: <strong>A = P × (1 + r/4)^(4×t)</strong>. For non-cumulative FDs, simple interest is calculated on the principal for each payout period. The quarterly compounding of cumulative FDs results in a slightly higher effective yield than the stated nominal rate.</p>
+
+      <h2>FD Rates in India (2024–25)</h2>
+      <p>Major Indian banks currently offer FD rates ranging from 6.5% to 7.75% for general citizens, and 0.25% to 0.75% additional for senior citizens. Small finance banks and some NBFCs offer higher rates — sometimes above 8% — but may carry slightly higher credit risk. Post Office Time Deposits offer government-backed rates between 6.9% and 7.5% depending on tenure.</p>
+
+      <h2>Tax on FD Interest in India</h2>
+      <p>Interest earned on FDs is fully taxable as "Income from Other Sources" at your applicable income tax slab rate. Banks deduct TDS at 10% if interest exceeds ₹40,000 per year (₹50,000 for senior citizens). You can submit Form 15G (or 15H for seniors) to avoid TDS if your total income is below the taxable limit.</p>
+    </section>
+
+    <div class="also-try">
+      <h2>Also Try</h2>
+      <div class="also-try-links">
+        <a href="rd-calculator.html">RD Calculator</a>
+        <a href="compound-interest-calculator.html">Compound Interest Calculator</a>
+        <a href="sip-calculator.html">SIP Calculator</a>
+        <a href="emi-calculator.html">EMI Calculator</a>
+        <a href="interest-calculator.html">Simple Interest Calculator</a>
+        <a href="index.html">← All Tools</a>
+      </div>
+    </div>
+
+  </main>
+
+  <section class="info-section">
+    <div class="info-section-inner">
+      <h2>How to Use This FD Calculator</h2>
+      <p>Enter your deposit amount, the annual interest rate from your bank, and the tenure. Choose whether you want cumulative (maturity) payout or periodic (monthly/quarterly) payouts. Tick the senior citizen box if applicable — this adds 0.50% to the rate as offered by most Indian banks. The calculator uses quarterly compounding for cumulative FDs, matching the standard used by SBI, HDFC, ICICI, and other major Indian banks.</p>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p>Free Finance Tools for India — Accurate, Fast &amp; Free</p>
+      <nav class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="emi-calculator.html">EMI</a>
+        <a href="sip-calculator.html">SIP</a>
+        <a href="rd-calculator.html">RD</a>
+        <a href="compound-interest-calculator.html">Compound Interest</a>
+        <a href="interest-calculator.html">Simple Interest</a>
+        <a href="percentage-calculator.html">Percentage</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="js/fd.js"></script>
+</body>
+</html>

@@ -520,3 +520,98 @@ img { max-width: 100%; display: block; }
   .result-grid { grid-template-columns: 1fr; }
   .tools-grid { grid-template-columns: 1fr; }
 }
+/* ================================================
+   styles-additions.css
+   Append these rules to your existing styles.css
+   Finance Tools India — New Tool Additions
+   ================================================ */
+
+/* ================================================
+   CALCULATOR TABS (Percentage page)
+   ================================================ */
+.calc-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .5rem;
+  margin-bottom: 1.25rem;
+}
+
+.calc-tab {
+  padding: .5rem 1.1rem;
+  border-radius: 50px;
+  border: 1.5px solid var(--border);
+  background: var(--bg-alt);
+  font-family: var(--font-body);
+  font-size: .875rem;
+  font-weight: 600;
+  color: var(--text-mid);
+  cursor: pointer;
+  transition: background var(--transition), border-color var(--transition), color var(--transition);
+}
+
+.calc-tab:hover {
+  border-color: var(--primary);
+  color: var(--primary);
+  background: var(--primary-light);
+}
+
+.calc-tab.active {
+  background: var(--primary);
+  border-color: var(--primary);
+  color: #fff;
+}
+
+.mode-desc {
+  font-size: .9rem;
+  color: var(--text-mid);
+  margin-bottom: 1.25rem;
+  padding: .6rem .9rem;
+  background: var(--bg-alt);
+  border-radius: var(--radius);
+  border-left: 3px solid var(--primary);
+}
+
+/* ================================================
+   SEO CONTENT SECTION (within main)
+   ================================================ */
+.seo-content {
+  margin-top: 2.5rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--border);
+}
+
+.seo-content h2 {
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  color: var(--text-dark);
+  margin-bottom: .5rem;
+  margin-top: 1.75rem;
+}
+
+.seo-content h2:first-child {
+  margin-top: 0;
+}
+
+.seo-content p {
+  font-size: .925rem;
+  color: var(--text-mid);
+  line-height: 1.7;
+  max-width: 720px;
+}
+
+/* ================================================
+   CHECKBOX STYLE
+   ================================================ */
+.form-group input[type="checkbox"] {
+  width: auto !important;
+  accent-color: var(--primary);
+  cursor: pointer;
+}
+
+/* ================================================
+   RESPONSIVE additions
+   ================================================ */
+@media (max-width: 480px) {
+  .calc-tabs { gap: .4rem; }
+  .calc-tab  { font-size: .8rem; padding: .4rem .85rem; }
+}

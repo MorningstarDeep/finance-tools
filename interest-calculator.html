@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Simple Interest Calculator India – Calculate SI Online Free</title>
+  <meta name="description" content="Free simple interest calculator India. Calculate interest earned or paid on any principal amount at a given rate for a fixed time period. Instant results." />
+  <meta name="keywords" content="simple interest calculator India, SI calculator free, interest calculator online India, calculate interest on loan" />
+  <link rel="canonical" href="https://financetoolsindia.pages.dev/interest-calculator.html" />
+  <link rel="icon" type="image/x-icon" href="favicon.ico" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Simple Interest Calculator India",
+    "description": "Free simple interest calculator for India. Calculate SI on any principal amount.",
+    "url": "https://financetoolsindia.pages.dev/interest-calculator.html",
+    "isPartOf": { "@type": "WebSite", "name": "Finance Tools India", "url": "https://financetoolsindia.pages.dev/" }
+  }
+  </script>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="site-logo">Finance Tools India<span class="logo-dot"></span></a>
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="emi-calculator.html">EMI</a>
+        <a href="sip-calculator.html">SIP</a>
+        <a href="gst-calculator.html">GST</a>
+        <a href="salary-calculator.html">Salary</a>
+        <a href="loan-calculator.html">Loan</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="page-hero">
+    <div class="page-hero-inner">
+      <p class="breadcrumb"><a href="index.html">Home</a> / Simple Interest Calculator</p>
+      <h1>Simple Interest Calculator India</h1>
+      <p>Calculate the interest earned or owed on any principal amount at a fixed annual rate over a chosen time period — instantly and for free.</p>
+    </div>
+  </section>
+
+  <main class="content-wrap">
+
+    <div class="calc-card">
+      <form id="interest-form" novalidate>
+
+        <div class="form-group">
+          <label for="principal">Principal Amount (₹)</label>
+          <input type="number" id="principal" placeholder="e.g. 100000" min="1" required />
+          <p class="form-hint">The initial amount of money deposited or borrowed.</p>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="si-rate">Annual Interest Rate (%)</label>
+            <input type="number" id="si-rate" placeholder="e.g. 7.5" min="0.01" step="0.01" required />
+          </div>
+
+          <div class="form-group">
+            <label for="si-time">Time Period</label>
+            <input type="number" id="si-time" placeholder="e.g. 3" min="0.01" step="0.01" required />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="si-time-unit">Time Unit</label>
+          <select id="si-time-unit">
+            <option value="years">Years</option>
+            <option value="months">Months</option>
+            <option value="days">Days</option>
+          </select>
+        </div>
+
+        <div class="btn-group">
+          <button type="submit" class="btn btn-primary">Calculate Interest</button>
+          <button type="reset" class="btn btn-reset" id="interest-reset">Reset</button>
+        </div>
+
+      </form>
+    </div>
+
+    <div class="result-box" id="interest-result">
+      <h3>Simple Interest Breakdown</h3>
+      <div class="result-grid">
+        <div class="result-item">
+          <div class="label">Simple Interest</div>
+          <div class="value accent" id="res-si">—</div>
+        </div>
+        <div class="result-item">
+          <div class="label">Total Amount</div>
+          <div class="value" id="res-si-total">—</div>
+        </div>
+        <div class="result-item">
+          <div class="label">Principal</div>
+          <div class="value" id="res-si-principal">—</div>
+        </div>
+        <div class="result-item">
+          <div class="label">Effective Annual Rate</div>
+          <div class="value" id="res-si-rate">—</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SEO CONTENT -->
+    <section class="seo-content">
+      <h2>What is Simple Interest?</h2>
+      <p>Simple Interest (SI) is calculated only on the original principal amount, and does not compound over time. It is the most straightforward form of interest and is commonly used in short-term loans, fixed deposits under one year, car loans, and consumer finance in India.</p>
+
+      <h2>Simple Interest Formula</h2>
+      <p>The formula is: <strong>SI = (P × R × T) / 100</strong>, where P is the principal amount, R is the annual interest rate (%), and T is the time in years. The total amount payable or receivable is <strong>A = P + SI</strong>.</p>
+
+      <h2>Simple Interest vs Compound Interest</h2>
+      <p>Unlike compound interest, simple interest does not earn interest on accumulated interest. This makes it less powerful for wealth creation but easier to understand. For periods greater than one year, compound interest will always yield a higher return than simple interest at the same rate.</p>
+
+      <h2>Where is Simple Interest Used in India?</h2>
+      <p>Simple interest is commonly used in short-term personal loans, vehicle loans, some microfinance products, post office schemes of short tenure, and for calculating late payment charges on utility bills and credit cards.</p>
+    </section>
+
+    <div class="also-try">
+      <h2>Also Try</h2>
+      <div class="also-try-links">
+        <a href="compound-interest-calculator.html">Compound Interest Calculator</a>
+        <a href="fd-calculator.html">FD Calculator</a>
+        <a href="rd-calculator.html">RD Calculator</a>
+        <a href="emi-calculator.html">EMI Calculator</a>
+        <a href="sip-calculator.html">SIP Calculator</a>
+        <a href="index.html">← All Tools</a>
+      </div>
+    </div>
+
+  </main>
+
+  <section class="info-section">
+    <div class="info-section-inner">
+      <h2>How to Use This Simple Interest Calculator</h2>
+      <p>Enter your principal amount, the annual interest rate offered (check your loan or deposit agreement), and the time period. Select whether your time is in years, months, or days. Click "Calculate Interest" to instantly see the total interest amount and the final payable or receivable value. This tool is useful for comparing loan offers and understanding the true cost of credit.</p>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p>Free Finance Tools for India — Accurate, Fast &amp; Free</p>
+      <nav class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="emi-calculator.html">EMI</a>
+        <a href="sip-calculator.html">SIP</a>
+        <a href="fd-calculator.html">FD</a>
+        <a href="rd-calculator.html">RD</a>
+        <a href="compound-interest-calculator.html">Compound Interest</a>
+        <a href="percentage-calculator.html">Percentage</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="js/interest.js"></script>
+</body>
+</html>

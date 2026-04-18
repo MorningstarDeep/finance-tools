@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Compound Interest Calculator India – Calculate CI Returns Free</title>
+  <meta name="description" content="Free compound interest calculator India. Calculate compound interest with different compounding frequencies — annually, quarterly, monthly. See how money grows over time." />
+  <meta name="keywords" content="compound interest calculator India, CI calculator free, compounding interest calculator, calculate compound interest online India" />
+  <link rel="canonical" href="https://financetoolsindia.pages.dev/compound-interest-calculator.html" />
+  <link rel="icon" type="image/x-icon" href="favicon.ico" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Compound Interest Calculator India",
+    "description": "Free compound interest calculator India with multiple compounding frequencies.",
+    "url": "https://financetoolsindia.pages.dev/compound-interest-calculator.html",
+    "isPartOf": { "@type": "WebSite", "name": "Finance Tools India", "url": "https://financetoolsindia.pages.dev/" }
+  }
+  </script>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="site-logo">Finance Tools India<span class="logo-dot"></span></a>
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="emi-calculator.html">EMI</a>
+        <a href="sip-calculator.html">SIP</a>
+        <a href="gst-calculator.html">GST</a>
+        <a href="salary-calculator.html">Salary</a>
+        <a href="loan-calculator.html">Loan</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="page-hero">
+    <div class="page-hero-inner">
+      <p class="breadcrumb"><a href="index.html">Home</a> / Compound Interest Calculator</p>
+      <h1>Compound Interest Calculator India</h1>
+      <p>Find out how your investment grows with the power of compounding. Supports annual, half-yearly, quarterly, and monthly compounding frequencies.</p>
+    </div>
+  </section>
+
+  <main class="content-wrap">
+
+    <div class="calc-card">
+      <form id="compound-form" novalidate>
+
+        <div class="form-group">
+          <label for="ci-principal">Principal Amount (₹)</label>
+          <input type="number" id="ci-principal" placeholder="e.g. 100000" min="1" required />
+          <p class="form-hint">The initial investment or loan amount.</p>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="ci-rate">Annual Interest Rate (%)</label>
+            <input type="number" id="ci-rate" placeholder="e.g. 8" min="0.01" step="0.01" required />
+          </div>
+
+          <div class="form-group">
+            <label for="ci-time">Time Period (Years)</label>
+            <input type="number" id="ci-time" placeholder="e.g. 5" min="0.25" step="0.25" required />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="ci-frequency">Compounding Frequency</label>
+          <select id="ci-frequency">
+            <option value="1">Annually (once a year)</option>
+            <option value="2">Half-Yearly (twice a year)</option>
+            <option value="4" selected>Quarterly (4 times a year)</option>
+            <option value="12">Monthly (12 times a year)</option>
+            <option value="365">Daily (365 times a year)</option>
+          </select>
+        </div>
+
+        <div class="btn-group">
+          <button type="submit" class="btn btn-primary">Calculate Compound Interest</button>
+          <button type="reset" class="btn btn-reset" id="compound-reset">Reset</button>
+        </div>
+
+      </form>
+    </div>
+
+    <div class="result-box" id="compound-result">
+      <h3>Compound Interest Breakdown</h3>
+      <div class="result-grid">
+        <div class="result-item">
+          <div class="label">Total Amount</div>
+          <div class="value accent" id="res-ci-total">—</div>
+        </div>
+        <div class="result-item">
+          <div class="label">Compound Interest</div>
+          <div class="value" id="res-ci">—</div>
+        </div>
+        <div class="result-item">
+          <div class="label">Principal Amount</div>
+          <div class="value" id="res-ci-principal">—</div>
+        </div>
+        <div class="result-item">
+          <div class="label">Effective Annual Rate</div>
+          <div class="value" id="res-ci-ear">—</div>
+        </div>
+        <div class="result-item">
+          <div class="label">vs Simple Interest</div>
+          <div class="value" id="res-ci-vs-si">—</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SEO CONTENT -->
+    <section class="seo-content">
+      <h2>What is Compound Interest?</h2>
+      <p>Compound interest is interest calculated on both the initial principal and the accumulated interest from previous periods. Unlike simple interest, compounding means your money grows faster over time — because you earn interest on your interest. Albert Einstein reportedly called it the "eighth wonder of the world."</p>
+
+      <h2>Compound Interest Formula</h2>
+      <p>The formula is: <strong>A = P × (1 + r/n)^(n×t)</strong>, where A is the total amount, P is the principal, r is the annual interest rate (as a decimal), n is the number of times interest compounds per year, and t is the time in years. Compound Interest = A − P.</p>
+
+      <h2>Effect of Compounding Frequency</h2>
+      <p>The more frequently interest compounds, the more you earn. For a ₹1,00,000 investment at 8% for 5 years: annual compounding gives ₹1,46,933; quarterly gives ₹1,48,451; and monthly gives ₹1,48,886. The difference becomes more significant with larger amounts and longer time periods.</p>
+
+      <h2>Compound Interest in Indian Investments</h2>
+      <p>In India, Fixed Deposits typically compound quarterly. Most savings account interest is calculated daily but credited monthly or quarterly. Mutual fund SIPs benefit from compounding over long horizons, which is why financial advisors recommend starting early. PPF interest is compounded annually, credited on March 31 each year.</p>
+    </section>
+
+    <div class="also-try">
+      <h2>Also Try</h2>
+      <div class="also-try-links">
+        <a href="interest-calculator.html">Simple Interest Calculator</a>
+        <a href="fd-calculator.html">FD Calculator</a>
+        <a href="sip-calculator.html">SIP Calculator</a>
+        <a href="rd-calculator.html">RD Calculator</a>
+        <a href="emi-calculator.html">EMI Calculator</a>
+        <a href="index.html">← All Tools</a>
+      </div>
+    </div>
+
+  </main>
+
+  <section class="info-section">
+    <div class="info-section-inner">
+      <h2>How to Use This Compound Interest Calculator</h2>
+      <p>Enter your principal, the annual interest rate, and the number of years. Then choose your compounding frequency — most Indian bank FDs compound quarterly. The calculator will show you the total amount, the compound interest earned, and also how much more you earn compared to simple interest at the same rate. Use this to compare different investment products and understand the long-term impact of compounding.</p>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p>Free Finance Tools for India — Accurate, Fast &amp; Free</p>
+      <nav class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="emi-calculator.html">EMI</a>
+        <a href="sip-calculator.html">SIP</a>
+        <a href="fd-calculator.html">FD</a>
+        <a href="rd-calculator.html">RD</a>
+        <a href="interest-calculator.html">Simple Interest</a>
+        <a href="percentage-calculator.html">Percentage</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="js/compound.js"></script>
+</body>
+</html>
