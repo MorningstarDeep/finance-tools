@@ -1,5 +1,5 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://financetoolsindia.pages.dev/sitemap.xml
+Sitemap: https://calcyourfinance.com/sitemap.xml
 
