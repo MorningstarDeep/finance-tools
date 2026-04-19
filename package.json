@@ -1,0 +1,23 @@
+{
+  "name": "finance-tools",
+  "version": "1.0.0",
+  "description": "Free online finance calculators for India",
+  "type": "module",
+  "scripts": {
+    "build": "echo 'Static HTML site - no build required'"
+  },
+  "dependencies": {
+    "@vercel/analytics": "^1.4.1"
+  },
+  "devDependencies": {},
+  "keywords": [
+    "finance",
+    "calculator",
+    "india",
+    "emi",
+    "sip",
+    "gst"
+  ],
+  "author": "",
+  "license": "MIT"
+}
