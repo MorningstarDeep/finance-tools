@@ -1,0 +1,54 @@
+{
+  "redirects": [
+    {
+      "source": "/emi-calculator.html",
+      "destination": "/emi-calculator",
+      "permanent": true
+    },
+    {
+      "source": "/sip-calculator.html",
+      "destination": "/sip-calculator",
+      "permanent": true
+    },
+    {
+      "source": "/gst-calculator.html",
+      "destination": "/gst-calculator",
+      "permanent": true
+    },
+    {
+      "source": "/salary-calculator.html",
+      "destination": "/salary-calculator",
+      "permanent": true
+    },
+    {
+      "source": "/loan-calculator.html",
+      "destination": "/loan-calculator",
+      "permanent": true
+    },
+    {
+      "source": "/fd-calculator.html",
+      "destination": "/fd-calculator",
+      "permanent": true
+    },
+    {
+      "source": "/rd-calculator.html",
+      "destination": "/rd-calculator",
+      "permanent": true
+    },
+    {
+      "source": "/compound-interest-calculator.html",
+      "destination": "/compound-interest-calculator",
+      "permanent": true
+    },
+    {
+      "source": "/interest-calculator.html",
+      "destination": "/interest-calculator",
+      "permanent": true
+    },
+    {
+      "source": "/percentage-calculator.html",
+      "destination": "/percentage-calculator",
+      "permanent": true
+    }
+  ]
+}
