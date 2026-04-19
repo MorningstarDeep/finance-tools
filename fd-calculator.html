@@ -109,7 +109,10 @@
   <header class="site-header">
     <div class="header-inner">
       <a href="index.html" class="site-logo">Finance Tools India</a>
-      <nav class="site-nav" aria-label="Main navigation">
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+      </button>
+      <nav class="site-nav" id="site-nav" aria-label="Main navigation">
         <a href="emi-calculator.html">EMI</a>
         <a href="sip-calculator.html">SIP</a>
         <a href="gst-calculator.html">GST</a>
@@ -368,7 +371,24 @@
       </p>
     </div>
   </footer>
+  <script>
+    const navToggle = document.getElementById('nav-toggle');
+    const siteNav   = document.getElementById('site-nav');
 
+    navToggle.addEventListener('click', () => {
+      const isOpen = siteNav.classList.toggle('open');
+      navToggle.classList.toggle('open', isOpen);
+      navToggle.setAttribute('aria-expanded', isOpen);
+    });
+
+    siteNav.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        siteNav.classList.remove('open');
+        navToggle.classList.remove('open');
+        navToggle.setAttribute('aria-expanded', 'false');
+      });
+    });
+  </script>
   <!-- ═══ FAQ ACCORDION JS ═══ -->
   <script>
     document.querySelectorAll('.faq-question').forEach(btn => {

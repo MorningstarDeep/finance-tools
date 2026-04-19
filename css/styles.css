@@ -71,9 +71,10 @@ img { max-width: 100%; display: block; }
   align-items: center;
   gap: .5rem;
   font-family: var(--font-display);
-  font-size: 1.25rem;
+  font-size: 1.15rem;
   color: var(--text-dark);
   text-decoration: none;
+  flex-shrink: 0;
 }
 
 .site-logo span.logo-dot {
@@ -85,6 +86,37 @@ img { max-width: 100%; display: block; }
   margin-bottom: 2px;
 }
 
+/* ---- HAMBURGER BUTTON (mobile only) ---- */
+.nav-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+  width: 36px;
+  height: 36px;
+  flex-shrink: 0;
+}
+
+.nav-toggle span {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background: var(--text-dark);
+  border-radius: 2px;
+  transition: all 0.2s ease;
+  transform-origin: center;
+}
+
+/* Animated X when open */
+.nav-toggle.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+.nav-toggle.open span:nth-child(2) { opacity: 0; transform: scaleX(0); }
+.nav-toggle.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+/* ---- DESKTOP NAV ---- */
 .site-nav {
   display: flex;
   gap: 1.5rem;
@@ -97,6 +129,9 @@ img { max-width: 100%; display: block; }
   color: var(--text-mid);
   transition: color var(--transition);
 }
+
+.site-nav a:hover,
+.site-nav a.active { color: var(--primary); text-decoration: none; }
 
 /* ---- DROPDOWN ---- */
 .dropdown {
@@ -115,9 +150,7 @@ img { max-width: 100%; display: block; }
   padding: 6px 8px;
 }
 
-.dropdown-toggle:hover {
-  color: var(--primary);
-}
+.dropdown-toggle:hover { color: var(--primary); }
 
 .dropdown-menu {
   position: absolute;
@@ -154,9 +187,6 @@ img { max-width: 100%; display: block; }
   background: var(--primary-light);
   color: var(--primary);
 }
-
-.site-nav a:hover,
-.site-nav a.active { color: var(--primary); text-decoration: none; }
 
 /* ================================================
    HERO / PAGE HERO
@@ -720,22 +750,14 @@ img { max-width: 100%; display: block; }
 
 /* Answer panel — key fix: use grid rows instead of max-height for smooth animation */
 .faq-answer {
-  display: grid;
-  grid-template-rows: 0fr;
-  transition: grid-template-rows 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  max-height: 0;
   overflow: hidden;
-}
-
-.faq-answer-inner {
-  overflow: hidden;
+  transition: max-height 0.28s ease-in-out, padding 0.28s ease-in-out;
   padding: 0 1.25rem;
 }
 
 .faq-item.open .faq-answer {
-  grid-template-rows: 1fr;
-}
-
-.faq-item.open .faq-answer-inner {
+  max-height: 150px;
   padding: 0 1.25rem 1.25rem;
 }
 
@@ -781,31 +803,281 @@ img { max-width: 100%; display: block; }
 }
 
 /* ================================================
-   RESPONSIVE
+   RESPONSIVE — TABLET (max 768px)
    ================================================ */
-@media (max-width: 640px) {
-  .form-row { grid-template-columns: 1fr; }
+@media (max-width: 768px) {
 
-  .header-inner { gap: 1rem; }
-  .site-nav { gap: 1rem; }
-  .site-nav a { font-size: .8rem; }
+  /* ---- HAMBURGER NAV ---- */
+  .nav-toggle {
+    display: flex;
+  }
 
-  .result-grid { grid-template-columns: 1fr 1fr; }
+  .site-nav {
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    background: var(--bg);
+    border-bottom: 1px solid var(--border);
+    box-shadow: var(--shadow-md);
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    padding: .5rem 0 1rem;
+    z-index: 99;
+  }
 
-  .hero { padding: 3.5rem 1rem 3rem; }
-  .calc-card { padding: 1.25rem; }
+  .site-nav.open {
+    display: flex;
+  }
 
-  .btn-group { flex-direction: column; align-items: flex-start; }
-  .btn-reset { margin-left: 0; }
+  .site-nav a {
+    font-size: .95rem;
+    padding: .75rem 1.5rem;
+    border-bottom: 1px solid var(--border);
+    color: var(--text-dark);
+  }
 
-  .faq-question { font-size: .875rem; padding: .875rem 1rem; }
-  .faq-answer { padding: 0 1rem; }
-  .faq-item.open .faq-answer { padding: 0 1rem 1rem; }
+  .site-nav a:last-of-type {
+    border-bottom: none;
+  }
+
+  /* Dropdown becomes flat list on mobile */
+  .dropdown {
+    display: block;
+  }
+
+  .dropdown-toggle {
+    display: none; /* hide "More" button — all links shown flat */
+  }
+
+  .dropdown-menu {
+    position: static;
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+    box-shadow: none;
+    border: none;
+    border-radius: 0;
+    padding: 0;
+    min-width: 0;
+    background: var(--bg-alt);
+  }
+
+  .dropdown-menu a {
+    padding: .75rem 1.5rem .75rem 2rem;
+    font-size: .9rem;
+    border-bottom: 1px solid var(--border);
+    color: var(--text-mid);
+  }
+
+  .dropdown-menu a:last-child {
+    border-bottom: none;
+  }
+
+  /* ---- HERO ---- */
+  .hero {
+    padding: 3rem 1.25rem 2.5rem;
+  }
+
+  .hero h1 {
+    font-size: clamp(1.6rem, 6vw, 2.2rem);
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .trust-line {
+    font-size: .8rem;
+  }
+
+  /* ---- PAGE HERO ---- */
+  .page-hero {
+    padding: 1.75rem 1.25rem;
+  }
+
+  .page-hero h1 {
+    font-size: clamp(1.3rem, 5vw, 1.75rem);
+  }
+
+  /* ---- CONTENT ---- */
+  .content-wrap {
+    padding: 2rem 1.25rem 3rem;
+  }
+
+  /* ---- TOOLS GRID ---- */
+  .tools-grid {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1rem;
+  }
+
+  /* ---- CALC CARD ---- */
+  .calc-card {
+    padding: 1.5rem 1.25rem;
+  }
+
+  /* ---- FORM ROWS — stack on tablet ---- */
+  .form-row {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  /* ---- RESULT GRID ---- */
+  .result-box {
+    padding: 1.25rem;
+  }
+
+  .result-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: .75rem;
+  }
+
+  .result-item .value {
+    font-size: 1.2rem;
+  }
+
+  /* ---- BUTTONS ---- */
+  .btn-group {
+    flex-direction: column;
+    align-items: stretch;
+    gap: .75rem;
+  }
+
+  .btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  .btn-reset {
+    margin-left: 0;
+  }
+
+  /* ---- CALC TABS (Percentage) ---- */
+  .calc-tabs {
+    gap: .4rem;
+  }
+
+  .calc-tab {
+    font-size: .8rem;
+    padding: .45rem .85rem;
+  }
+
+  /* ---- FAQ ---- */
+  .faq-section {
+    padding: 2rem 1.25rem;
+  }
+
+  .faq-question {
+    font-size: .875rem;
+    padding: .875rem 1rem;
+  }
+
+  .faq-answer-inner {
+    padding: 0 1rem;
+  }
+
+  .faq-item.open .faq-answer-inner {
+    padding: 0 1rem 1rem;
+  }
+
+  /* ---- INFO / ABOUT ---- */
+  .info-section {
+    padding: 2rem 1.25rem;
+  }
+
+  .about-section {
+    padding: 2rem 1.25rem 3rem;
+  }
+
+  /* ---- FOOTER ---- */
+  .site-footer {
+    padding: 1.75rem 1.25rem;
+  }
+
+  .site-footer a {
+    display: inline-block;
+    margin: .2rem .3rem;
+  }
 }
 
-@media (max-width: 400px) {
-  .result-grid { grid-template-columns: 1fr; }
-  .tools-grid { grid-template-columns: 1fr; }
-  .calc-tabs { gap: .4rem; }
-  .calc-tab { font-size: .8rem; padding: .4rem .85rem; }
+/* ================================================
+   RESPONSIVE — MOBILE (max 480px)
+   ================================================ */
+@media (max-width: 480px) {
+
+  /* Logo shorter on very small screens */
+  .site-logo {
+    font-size: 1rem;
+  }
+
+  /* ---- HERO ---- */
+  .hero {
+    padding: 2.5rem 1rem 2rem;
+  }
+
+  /* ---- TOOLS GRID — single column ---- */
+  .tools-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* ---- CALC CARD ---- */
+  .calc-card {
+    padding: 1.25rem 1rem;
+    border-radius: var(--radius);
+  }
+
+  /* ---- RESULT GRID — single column on very small screens ---- */
+  .result-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .result-item .value {
+    font-size: 1.1rem;
+  }
+
+  /* ---- SEO CONTENT ---- */
+  .seo-content h2 {
+    font-size: 1.05rem;
+  }
+
+  /* ---- ALSO TRY ---- */
+  .also-try-links a {
+    font-size: .8rem;
+    padding: .35rem .75rem;
+  }
+
+  /* ---- CALC TABS ---- */
+  .calc-tab {
+    font-size: .75rem;
+    padding: .4rem .7rem;
+  }
+
+  /* ---- MODE DESC ---- */
+  .mode-desc {
+    font-size: .82rem;
+  }
+}
+
+/* ================================================
+   RESPONSIVE — VERY SMALL (max 360px)
+   ================================================ */
+@media (max-width: 360px) {
+  .result-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero h1 {
+    font-size: 1.5rem;
+  }
+
+  .calc-tabs {
+    flex-direction: column;
+  }
+
+  .calc-tab {
+    width: 100%;
+    text-align: center;
+  }
 }
