@@ -3,82 +3,159 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>FD Calculator India – Calculate Fixed Deposit Returns Online Free</title>
-  <meta name="description" content="Free FD calculator India. Calculate maturity amount and interest earned on your fixed deposit. Supports quarterly compounding used by all major Indian banks." />
-  <meta name="keywords" content="FD calculator India, fixed deposit calculator, FD maturity calculator, fixed deposit interest calculator India free" />
+
+  <!-- ═══ PRIMARY SEO ═══ -->
+  <title>FD Calculator India – Fixed Deposit Maturity & Interest Calculator Free</title>
+  <meta name="description" content="Free FD calculator India. Calculate fixed deposit maturity amount, interest earned, and periodic payouts. Supports senior citizen rates and quarterly compounding used by all major Indian banks." />
+  <meta name="keywords" content="FD calculator India, fixed deposit calculator, FD maturity calculator, fixed deposit interest calculator India, senior citizen FD calculator, SBI FD calculator, HDFC FD calculator" />
   <link rel="canonical" href="https://financetoolsindia.pages.dev/fd-calculator.html" />
+
+  <!-- ═══ OPEN GRAPH ═══ -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="FD Calculator India – Fixed Deposit Maturity & Interest Calculator Free" />
+  <meta property="og:description" content="Calculate fixed deposit maturity amount and interest earned. Supports cumulative and periodic payouts, senior citizen rates, and quarterly compounding. Free, instant, no login." />
+  <meta property="og:url" content="https://financetoolsindia.pages.dev/fd-calculator.html" />
+  <meta property="og:site_name" content="Finance Tools India" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="FD Calculator India – Fixed Deposit Maturity & Interest Calculator Free" />
+  <meta name="twitter:description" content="Calculate FD maturity amount and interest. Supports senior citizen rates. Free, instant, no login." />
+
+  <!-- ═══ FAVICONS ═══ -->
   <link rel="icon" type="image/x-icon" href="favicon.ico" />
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+
   <link rel="stylesheet" href="css/styles.css" />
+
+  <!-- ═══ SCHEMA — WebApplication ═══ -->
   <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "WebPage",
-  "name": "FD Calculator India",
-  "description": "Free fixed deposit calculator India. Calculate maturity amount and interest earned.",
-  "url": "https://financetoolsindia.pages.dev/fd-calculator.html",
-  "isPartOf": {
-    "@type": "WebSite",
-    "name": "Finance Tools India",
-    "url": "https://financetoolsindia.pages.dev/"
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "FD Calculator India",
+    "url": "https://financetoolsindia.pages.dev/fd-calculator.html",
+    "description": "Free fixed deposit calculator for India. Calculate FD maturity amount, interest earned, and periodic payouts with support for senior citizen rates and quarterly compounding.",
+    "applicationCategory": "FinanceApplication",
+    "operatingSystem": "Any",
+    "browserRequirements": "Requires JavaScript",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "INR"
+    },
+    "isPartOf": {
+      "@type": "WebSite",
+      "name": "Finance Tools India",
+      "url": "https://financetoolsindia.pages.dev/"
+    }
   }
-}
-</script>
+  </script>
+
+  <!-- ═══ SCHEMA — FAQPage ═══ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How is FD interest calculated in India?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "For cumulative FDs (interest paid at maturity), Indian banks compound interest quarterly using the formula: A = P × (1 + r/4)^(4×t), where P is the principal, r is the annual rate as a decimal, and t is the tenure in years. For non-cumulative FDs with periodic payouts, simple interest is calculated on the principal for each period."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the maturity amount for a ₹5 lakh FD at 7% for 3 years?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "For a ₹5,00,000 FD at 7% annual interest for 3 years with quarterly compounding, the maturity amount is approximately ₹6,13,900 and the interest earned is approximately ₹1,13,900."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do senior citizens get higher FD interest rates?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Most Indian banks offer senior citizens (aged 60 and above) an additional 0.25% to 0.75% interest rate over the regular FD rate. SBI, HDFC, and ICICI currently offer 0.50% extra for senior citizens on most tenures. This calculator adds 0.50% when you tick the senior citizen option."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is FD interest taxable in India?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. FD interest is taxable as 'Income from Other Sources' at your applicable income tax slab rate. Banks deduct TDS at 10% if annual interest exceeds ₹40,000 (₹50,000 for senior citizens). You can submit Form 15G or 15H to avoid TDS if your total income is below the taxable limit."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I break my FD before maturity?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, most Indian banks allow premature FD withdrawal, but they levy a penalty — typically 0.5% to 1% reduction on the applicable interest rate. The interest is then paid at the rate applicable for the period the deposit was held, minus the penalty. Some tax-saving FDs have a mandatory 5-year lock-in and cannot be broken early."
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
 
+  <!-- ═══ HEADER ═══ -->
   <header class="site-header">
     <div class="header-inner">
-      <a href="index.html" class="site-logo">Finance Tools India<span class="logo-dot"></span></a>
-            <nav class="site-nav" aria-label="Main navigation">
-
-  <a href="emi-calculator.html">EMI</a>
-  <a href="sip-calculator.html">SIP</a>
-  <a href="gst-calculator.html">GST</a>
-  <a href="salary-calculator.html">Salary</a>
-  <a href="loan-calculator.html">Loan</a>
-
-  <div class="dropdown">
-    <button class="dropdown-toggle">More ▾</button>
-
-    <div class="dropdown-menu">
-      <a href="fd-calculator.html">FD Calculator</a>
-      <a href="rd-calculator.html">RD Calculator</a>
-      <a href="compound-interest-calculator.html">Compound Interest</a>
-      <a href="interest-calculator.html">Simple Interest</a>
-      <a href="percentage-calculator.html">Percentage Calculator</a>
-    </div>
-  </div>
-
-</nav>
+      <a href="index.html" class="site-logo">Finance Tools India</a>
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="emi-calculator.html">EMI</a>
+        <a href="sip-calculator.html">SIP</a>
+        <a href="gst-calculator.html">GST</a>
+        <a href="salary-calculator.html">Salary</a>
+        <a href="loan-calculator.html">Loan</a>
+        <div class="dropdown">
+          <button class="dropdown-toggle" aria-haspopup="true" aria-expanded="false">More ▾</button>
+          <div class="dropdown-menu">
+            <a href="fd-calculator.html" class="active">FD Calculator</a>
+            <a href="rd-calculator.html">RD Calculator</a>
+            <a href="compound-interest-calculator.html">Compound Interest</a>
+            <a href="interest-calculator.html">Simple Interest</a>
+            <a href="percentage-calculator.html">Percentage Calculator</a>
+          </div>
+        </div>
+      </nav>
     </div>
   </header>
 
+  <!-- ═══ PAGE HERO ═══ -->
   <section class="page-hero">
     <div class="page-hero-inner">
       <p class="breadcrumb"><a href="index.html">Home</a> / FD Calculator</p>
       <h1>FD Calculator India – Fixed Deposit Returns</h1>
-      <p>Calculate the maturity value and total interest earned on your fixed deposit. Supports all tenures, interest payout options, and senior citizen rates.</p>
+      <p>Calculate the exact maturity value and total interest earned on your fixed deposit. Supports cumulative and periodic payouts, senior citizen rates, and quarterly compounding as used by all major Indian banks.</p>
     </div>
   </section>
 
+  <!-- ═══ MAIN ═══ -->
   <main class="content-wrap">
 
+    <!-- CALCULATOR -->
     <div class="calc-card">
       <form id="fd-form" novalidate>
 
         <div class="form-group">
           <label for="fd-amount">Deposit Amount (₹)</label>
           <input type="number" id="fd-amount" placeholder="e.g. 500000" min="1000" required />
-          <p class="form-hint">The lump-sum amount you want to deposit.</p>
+          <p class="form-hint">The lump-sum amount you want to deposit. Minimum ₹1,000 for most banks.</p>
         </div>
 
         <div class="form-row">
           <div class="form-group">
             <label for="fd-rate">Annual Interest Rate (%)</label>
             <input type="number" id="fd-rate" placeholder="e.g. 7.1" min="0.1" step="0.01" required />
-            <p class="form-hint">Check your bank's current FD rate.</p>
+            <p class="form-hint">Check your bank's current FD rate. SBI offers ~6.8–7.1% for 1–3 years.</p>
           </div>
-
           <div class="form-group">
             <label for="fd-tenure">Tenure</label>
             <input type="number" id="fd-tenure" placeholder="e.g. 2" min="0.25" step="0.25" required />
@@ -93,7 +170,6 @@
               <option value="months">Months</option>
             </select>
           </div>
-
           <div class="form-group">
             <label for="fd-payout">Interest Payout</label>
             <select id="fd-payout">
@@ -105,10 +181,11 @@
         </div>
 
         <div class="form-group">
-          <label for="fd-senior">
-            <input type="checkbox" id="fd-senior" style="width:auto;margin-right:.4rem;" />
+          <label for="fd-senior" style="display:flex; align-items:center; gap:.5rem; cursor:pointer;">
+            <input type="checkbox" id="fd-senior" style="width:auto;" />
             Senior Citizen (additional 0.50% p.a.)
           </label>
+          <p class="form-hint">Tick if you are aged 60 or above. Most banks add 0.50% extra for senior citizens.</p>
         </div>
 
         <div class="btn-group">
@@ -119,6 +196,7 @@
       </form>
     </div>
 
+    <!-- RESULT BOX -->
     <div class="result-box" id="fd-result">
       <h3>Fixed Deposit Maturity Summary</h3>
       <div class="result-grid">
@@ -147,54 +225,168 @@
 
     <!-- SEO CONTENT -->
     <section class="seo-content">
+
       <h2>What is a Fixed Deposit (FD)?</h2>
-      <p>A Fixed Deposit (FD) is one of the safest investment instruments in India. You deposit a lump sum with a bank or NBFC for a fixed tenure at a pre-agreed interest rate. The rate does not change during the tenure, making it a risk-free, predictable investment. FDs are insured up to ₹5 lakh per depositor per bank by the DICGC (Deposit Insurance and Credit Guarantee Corporation).</p>
+      <p>A Fixed Deposit (FD) is one of the safest and most popular investment instruments in India. You deposit a lump sum with a bank or NBFC for a fixed tenure at a pre-agreed interest rate. The rate does not change during the tenure — regardless of market conditions — making it a risk-free, predictable investment. All bank FDs are insured up to ₹5 lakh per depositor per bank by the DICGC (Deposit Insurance and Credit Guarantee Corporation), a subsidiary of the RBI.</p>
 
-      <h2>FD Interest Calculation Method</h2>
-      <p>For cumulative FDs (interest paid at maturity), banks in India compound interest quarterly: <strong>A = P × (1 + r/4)^(4×t)</strong>. For non-cumulative FDs, simple interest is calculated on the principal for each payout period. The quarterly compounding of cumulative FDs results in a slightly higher effective yield than the stated nominal rate.</p>
+      <h2>How FD Interest is Calculated in India</h2>
+      <p>For cumulative FDs where interest is paid at maturity, Indian banks use quarterly compounding: <strong>A = P × (1 + r/4)^(4×t)</strong>, where A is the maturity amount, P is the principal, r is the annual interest rate as a decimal, and t is the tenure in years. For non-cumulative FDs with quarterly or monthly payouts, simple interest is calculated on the original principal for each period and paid out without reinvestment.</p>
 
-      <h2>FD Rates in India (2024–25)</h2>
-      <p>Major Indian banks currently offer FD rates ranging from 6.5% to 7.75% for general citizens, and 0.25% to 0.75% additional for senior citizens. Small finance banks and some NBFCs offer higher rates — sometimes above 8% — but may carry slightly higher credit risk. Post Office Time Deposits offer government-backed rates between 6.9% and 7.5% depending on tenure.</p>
+      <h2>Example: ₹5 Lakh FD at 7% for 3 Years</h2>
+      <p>With quarterly compounding: A = 5,00,000 × (1 + 0.07/4)^(4×3) = 5,00,000 × (1.0175)^12 = approximately ₹6,13,900. Interest earned = ₹1,13,900. For the same deposit with monthly payouts (non-cumulative), the quarterly interest payout = 5,00,000 × (7/400) = ₹8,750 per quarter. Total interest over 3 years = ₹1,05,000. Cumulative earns more because the interest is reinvested and compounds.</p>
+
+      <h2>Current FD Rates in India (2025)</h2>
+      <p>Major Indian banks currently offer FD rates ranging from 6.5% to 7.25% for general citizens on 1–3 year tenures. SBI offers 6.80%–7.10%, HDFC Bank offers 7.00%–7.25%, and ICICI Bank offers 6.70%–7.20% depending on the tenure. Senior citizens receive an additional 0.25%–0.75% on top of regular rates. Small finance banks such as AU Small Finance Bank and Jana Small Finance Bank offer higher rates — sometimes above 8% — but carry slightly higher credit risk as DICGC insurance still applies per-bank per-depositor.</p>
+
+      <h2>FD vs RD vs SIP — Which is Better?</h2>
+      <p>FDs are best for lump-sum investments where capital safety and guaranteed returns are the priority. RDs (Recurring Deposits) serve the same purpose but for regular monthly contributions instead of a lump sum. SIPs (Systematic Investment Plans) in mutual funds have higher potential returns over the long term but come with market risk. For short-term goals (1–3 years) or emergency funds, FDs are ideal. For long-term wealth building (7+ years), SIPs in equity mutual funds typically outperform FDs significantly after accounting for inflation.</p>
 
       <h2>Tax on FD Interest in India</h2>
-      <p>Interest earned on FDs is fully taxable as "Income from Other Sources" at your applicable income tax slab rate. Banks deduct TDS at 10% if interest exceeds ₹40,000 per year (₹50,000 for senior citizens). You can submit Form 15G (or 15H for seniors) to avoid TDS if your total income is below the taxable limit.</p>
+      <p>FD interest is fully taxable as "Income from Other Sources" at your applicable income tax slab rate — 5%, 20%, or 30%. Banks deduct TDS at 10% if your annual FD interest across all branches of that bank exceeds ₹40,000 (₹50,000 for senior citizens). If your total income is below the basic exemption limit, you can submit Form 15G (or Form 15H for senior citizens) at the beginning of each financial year to request that no TDS is deducted.</p>
+
+      <h2>Premature FD Withdrawal</h2>
+      <p>Most Indian banks allow you to break your FD before maturity, but they charge a premature withdrawal penalty — typically a 0.5% to 1% reduction on the applicable interest rate for the actual period held. For example, if you held a 3-year FD for 1.5 years and the 1-year rate was 6.5%, you would receive 6.5% minus the penalty, not the 3-year rate. Tax-saving FDs have a mandatory 5-year lock-in period under Section 80C and cannot be broken early under any circumstances.</p>
+
     </section>
 
+    <!-- ALSO TRY -->
     <div class="also-try">
       <h2>Also Try</h2>
       <div class="also-try-links">
         <a href="rd-calculator.html">RD Calculator</a>
         <a href="compound-interest-calculator.html">Compound Interest Calculator</a>
         <a href="sip-calculator.html">SIP Calculator</a>
-        <a href="emi-calculator.html">EMI Calculator</a>
         <a href="interest-calculator.html">Simple Interest Calculator</a>
+        <a href="emi-calculator.html">EMI Calculator</a>
         <a href="index.html">← All Tools</a>
       </div>
     </div>
 
+    <!-- FAQ -->
+    <section class="faq-section">
+      <div class="faq-inner">
+        <h2>Frequently Asked Questions</h2>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            How is FD interest calculated in India?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+            <p>For cumulative FDs, banks compound quarterly: <strong>A = P × (1 + r/4)^(4×t)</strong>. For periodic payout FDs, simple interest is paid each period on the original principal without reinvestment. Cumulative FDs earn more total interest because the earned interest itself earns interest.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            What is the maturity amount for a ₹5 lakh FD at 7% for 3 years?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+            <p>For a ₹5,00,000 FD at 7% annual interest for 3 years with quarterly compounding, the maturity amount is approximately <strong>₹6,13,900</strong>. Interest earned is approximately ₹1,13,900.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            Do senior citizens get higher FD interest rates?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+            <p>Yes. Most Indian banks offer senior citizens (60 years and above) an additional 0.25%–0.75% over the regular FD rate. SBI, HDFC, and ICICI currently offer 0.50% extra on most tenures. Tick the senior citizen checkbox in the calculator above to factor this in.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            Is FD interest taxable in India?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+            <p>Yes. FD interest is taxable at your income tax slab rate as "Income from Other Sources." Banks deduct TDS at 10% if annual interest exceeds ₹40,000 (₹50,000 for senior citizens). Submit Form 15G or 15H at the start of the financial year if your income is below the taxable limit.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            Can I break my FD before maturity?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+            <p>Yes, for most FDs. Banks charge a premature withdrawal penalty of 0.5%–1% on the applicable rate. Interest is paid at the rate for the actual period held, minus the penalty. Tax-saving FDs under Section 80C have a mandatory 5-year lock-in and cannot be broken early.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
   </main>
 
+  <!-- ═══ HOW TO USE ═══ -->
   <section class="info-section">
     <div class="info-section-inner">
       <h2>How to Use This FD Calculator</h2>
-      <p>Enter your deposit amount, the annual interest rate from your bank, and the tenure. Choose whether you want cumulative (maturity) payout or periodic (monthly/quarterly) payouts. Tick the senior citizen box if applicable — this adds 0.50% to the rate as offered by most Indian banks. The calculator uses quarterly compounding for cumulative FDs, matching the standard used by SBI, HDFC, ICICI, and other major Indian banks.</p>
+      <p>Enter your deposit amount, the annual interest rate from your bank, and the tenure in years or months. Choose your payout type — cumulative gives you the full amount with compounded interest at maturity, while quarterly or monthly payout gives you regular income. Tick the senior citizen box if applicable to add the standard 0.50% bonus. The calculator uses quarterly compounding for cumulative FDs, matching the standard used by SBI, HDFC, ICICI, and all major Indian banks. Use this to compare FD offers across banks before locking in your money.</p>
     </div>
   </section>
 
+  <!-- ═══ FOOTER ═══ -->
   <footer class="site-footer">
     <div class="footer-inner">
-      <p>Free Finance Tools for India — Accurate, Fast &amp; Free</p>
-      <nav class="footer-links">
+      <p>Finance Tools India — Free, Accurate Finance Calculators for India</p>
+      <nav class="footer-links" aria-label="Footer navigation">
         <a href="index.html">Home</a>
-        <a href="emi-calculator.html">EMI</a>
-        <a href="sip-calculator.html">SIP</a>
-        <a href="rd-calculator.html">RD</a>
+        <a href="emi-calculator.html">EMI Calculator</a>
+        <a href="sip-calculator.html">SIP Calculator</a>
+        <a href="gst-calculator.html">GST Calculator</a>
+        <a href="salary-calculator.html">Salary Calculator</a>
+        <a href="loan-calculator.html">Loan Eligibility</a>
+        <a href="fd-calculator.html">FD Calculator</a>
+        <a href="rd-calculator.html">RD Calculator</a>
         <a href="compound-interest-calculator.html">Compound Interest</a>
         <a href="interest-calculator.html">Simple Interest</a>
-        <a href="percentage-calculator.html">Percentage</a>
+        <a href="percentage-calculator.html">Percentage Calculator</a>
       </nav>
+      <nav class="footer-links" aria-label="Legal navigation" style="margin-top:.5rem;">
+        <a href="about.html">About</a>
+        <a href="privacy-policy.html">Privacy Policy</a>
+        <a href="terms.html">Terms of Use</a>
+      </nav>
+      <p style="margin-top:1rem; font-size:.8rem; color:rgba(255,255,255,.4);">
+        Disclaimer: Results are estimates only. FD rates change frequently — confirm with your bank before investing.
+      </p>
     </div>
   </footer>
+
+  <!-- ═══ FAQ ACCORDION JS ═══ -->
+  <script>
+    document.querySelectorAll('.faq-question').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const item = btn.closest('.faq-item');
+        const isOpen = item.classList.contains('open');
+        document.querySelectorAll('.faq-item').forEach(i => {
+          i.classList.remove('open');
+          i.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
+          i.querySelector('.faq-icon').textContent = '+';
+        });
+        if (!isOpen) {
+          item.classList.add('open');
+          btn.setAttribute('aria-expanded', 'true');
+          btn.querySelector('.faq-icon').textContent = '−';
+        }
+      });
+    });
+  </script>
 
   <script src="js/fd.js"></script>
 </body>
