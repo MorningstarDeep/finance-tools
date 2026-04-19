@@ -1,6 +1,6 @@
 /* ================================================
    percentage.js — Percentage Calculator (4 modes)
-   Finance Tools India
+   Calculate Your Finance
    ================================================ */
 
 'use strict';

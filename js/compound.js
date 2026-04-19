@@ -1,6 +1,6 @@
 /* ================================================
    compound.js — Compound Interest Calculator
-   Finance Tools India
+   Calculate Your Finance
    ================================================ */
 
 'use strict';

@@ -1,6 +1,6 @@
 /* ================================================
    sip.js — SIP Calculator Logic
-   Finance Tools India
+   Calculate Your Finance
    ================================================ */
 
 'use strict';

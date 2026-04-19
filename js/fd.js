@@ -1,6 +1,6 @@
 /* ================================================
    fd.js — Fixed Deposit Calculator
-   Finance Tools India
+   Calculate Your Finance
    ================================================ */
 
 'use strict';

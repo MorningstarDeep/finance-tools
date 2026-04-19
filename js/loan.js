@@ -1,6 +1,6 @@
 /* ================================================
    loan.js — Loan Eligibility Calculator Logic
-   Finance Tools India
+   Calculate Your Finance
    ================================================ */
 
 'use strict';

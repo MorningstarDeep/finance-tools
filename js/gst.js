@@ -1,6 +1,6 @@
 /* ================================================
    gst.js — GST Calculator Logic
-   Finance Tools India
+   Calculate Your Finance
    ================================================ */
 
 'use strict';

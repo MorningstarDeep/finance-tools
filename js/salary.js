@@ -1,6 +1,6 @@
 /* ================================================
    salary.js — Salary / CTC to In-Hand Calculator
-   Finance Tools India
+   Calculate Your Finance
    ================================================ */
 
 'use strict';

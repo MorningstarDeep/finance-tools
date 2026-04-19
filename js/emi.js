@@ -1,6 +1,6 @@
 /* ================================================
    emi.js — EMI Calculator Logic
-   Finance Tools India
+   Calculate Your Finance
    ================================================ */
 
 'use strict';
