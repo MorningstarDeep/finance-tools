@@ -752,7 +752,7 @@ img { max-width: 100%; display: block; }
 .faq-answer {
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.28s ease, padding 0.28s ease;
+  transition: max-height 0.2s ease-in-out, padding 0.2s ease-in-out;
   padding: 0 1.25rem;
 }
 
